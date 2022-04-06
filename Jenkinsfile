@@ -2,10 +2,7 @@ pipeline {
     agent any
     stages {
         stage('deploy') {
-            steps {
-              //sh "pwd"
-             //sh "cd .."
-              // sh "pwd"     
+            steps {   
               sh "aws configure set region $AWS_DEFAULT_REGION" 
               sh "aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID"  
               sh "aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY"
