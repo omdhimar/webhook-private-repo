@@ -18,9 +18,7 @@ pipeline {
 //               sh "aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY"
 //               sh "aws s3 cp index.html s3://s3-deploy"
 //           
-        
-        
-            }
+//             }
         }
     }
 }
